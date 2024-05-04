@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design</title>
+</head>
+<script src="https://kit.fontawesome.com/134238ace9.js" crossorigin="anonymous"></script>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: rgb(130, 187, 187);
+    }
+
+    .nav {
+        text-align: center;
+        padding: 6px;
+        background-color: rgb(7, 101, 101);
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+    }
+
+    ul li {
+        list-style: none;
+        display: inline;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .backbox {
+        width: 100%;
+        height: 400px;
+
+        box-sizing: border-box;
+        background-color: rgb(171, 242, 242);
+        border: 2px solid black;
+        position: relative;
+
+
+    }
+
+    .box1 {
+        margin: 4px;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        position: absolute;
+        top: 0px;
+        left: 10%;
+        background-color: red;
+
+    }
+
+    .box2 {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        position: absolute;
+        top: 0px;
+        right: 10%;
+        margin: 4px;
+        background-color: blue;
+
+
+    }
+
+    .textbox {
+        border: 2px solid black;
+
+        text-align: center;
+        border-radius: 10px;
+        font-size: 30px;
+        padding: 0px 34px;
+        margin: 10px 20vw;
+        background-color: burlywood;
+
+
+    }
+
+
+    .icon {
+        border: 2px solid black;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        position: fixed;
+        bottom: 0px;
+        right: 10px;
+        border-radius: 100%;
+        background-color: rgb(181, 84, 84);
+        z-index: 1;
+
+
+    }
+
+
+    .icon i {
+        position: absolute;
+        left: 12px;
+    }
+
+
+    footer {
+        border: 2px solid black;
+        position: relative;
+        bottom: 0px;
+        text-align: center;
+        background-color: blueviolet;
+    }
+
+
+    .fa-camera-retro {
+        line-height: 40px;
+
+    }
+</style>
+
+
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Contact Us</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Login</a></li>
+        </ul>
+
+
+    </div>
+    <div class="backbox">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+    <div class="textbox">
+        <h3>Welcome to this web page</h3>
+    </div>
+
+    <div class="icon">
+        <i class="fa-solid fa-bell fa-camera-retro"></i>
+    </div>
+
+    <footer>
+        I am Footer
+    </footer>
+
+</body>
+
+</html>
